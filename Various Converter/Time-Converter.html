@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="WEIGTH CONVERTER, Choose a unit you want to convert">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Time Converter</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Time-Converter.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.2.6, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#848475">
+    <meta property="og:title" content="Time Converter">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body"> 
+    <section class="height input px u-clearfix u-gradient width u-section-1" id="sec-2e2d">
+      <div class="u-clearfix u-sheet u-sheet-1"><span class="u-file-icon u-icon u-icon-1" data-href="Main.html" data-page-id="27282505"><img src="images/5702201.png" alt=""></span>
+        <div class="u-custom-color-4 u-radius-15 u-shape u-shape-round u-shape-1"></div>
+        <div class="inputType margin-left margin-right margin-top px u-clearfix u-custom-html u-preserve-proportions u-custom-html-1">
+          <style> .converter-body{
+            margin-left: 20px;
+        }
+        #inputType{
+        margin-left: 68px;
+		margin-top: 20px;
+    }
+			span{
+			color:white;
+    } </style>
+          <div class="converter-body">
+            <input type="text" placeholder=" Enter a value.." id="input">
+            <input type="text" placeholder=" Result" id="result">
+            <select id="inputType">
+              <option value="Millisecond">Millisecond</option>
+              <option value="Second">Second</option>
+              <option value="Minute">Minute</option>
+              <option value="Hour">Hour</option>
+              <option value="Day">Day</option>
+              <option value="Week">Week</option>
+              <option value="Month">Month</option>
+              <option value="Year">Year</option>
+              <option value="Decade">Decade</option>
+              <option value="Century">Century</option>
+            </select>
+            <span> to </span>
+            <select id="resultType">
+              <option value="Millisecond">Millisecond</option>
+              <option value="Second">Second</option>
+              <option value="Minute">Minute</option>
+              <option value="Hour">Hour</option>
+              <option value="Day">Day</option>
+              <option value="Week">Week</option>
+              <option value="Month">Month</option>
+              <option value="Year">Year</option>
+              <option value="Decade">Decade</option>
+              <option value="Century">Century</option>
+            </select>
+          </div>
+          <script> var input = document.getElementById('input');
+        var resilt = document.getElementById('result');
+        var inputType = document.getElementById('inputType');
+        var resultType = document.getElementById('resultType');
+        var inputTypeValue, resultTypeValue;
+        input.addEventListener("keyup",myResult);
+        inputType.addEventListener("change", myResult);
+        resultType.addEventListener("change", myResult);
+        inputTypeValue=inputType.value;
+        resultTypeValue=resultType.value;
+        function myResult(){
+            // result.value=input.value;
+            inputTypeValue=inputType.value;
+            resultTypeValue=resultType.value;
+            //Millisecond to others
+            if (inputTypeValue==="Millisecond" && resultTypeValue=="Millisecond"){
+                result.value=Number(input.value);
+            }
+            else if (inputTypeValue==="Millisecond" && resultTypeValue=="Second"){
+                result.value=Number(input.value)/1000;
+            }
+            else if (inputTypeValue==="Millisecond" && resultTypeValue=="Minute"){
+                result.value=Number(input.value)/6000;
+            }
+            else if (inputTypeValue==="Millisecond" && resultTypeValue=="Hour"){
+                result.value=Number(input.value)/3600000;
+            }
+            else if (inputTypeValue==="Millisecond" && resultTypeValue=="Day"){
+                result.value=Number(input.value)/86400000;
+            }
+            else if (inputTypeValue==="Millisecond" && resultTypeValue=="Week"){
+                result.value=Number(input.value)/604800000;
+            }
+            else if (inputTypeValue==="Millisecond" && resultTypeValue=="Month"){
+                result.value=Number(input.value)/2628000000;
+            }
+            else if (inputTypeValue==="Millisecond" && resultTypeValue=="Year"){
+                result.value=Number(input.value)/31540000000;
+            }
+            else if (inputTypeValue==="Millisecond" && resultTypeValue=="Decade"){
+                result.value=Number(input.value)/315400000000;
+            }
+            else if (inputTypeValue==="Millisecond" && resultTypeValue=="Century"){
+                result.value=Number(input.value)/3154000000000;
+            }
+            //Second to others
+            if (inputTypeValue==="Second" && resultTypeValue=="Millisecond"){
+                result.value=Number(input.value)*1000;
+            }
+            else if (inputTypeValue==="Second" && resultTypeValue=="Second"){
+                result.value=Number(input.value);
+            }
+            else if (inputTypeValue==="Second" && resultTypeValue=="Minute"){
+                result.value=Number(input.value)/60;
+            }
+            else if (inputTypeValue==="Second" && resultTypeValue=="Hour"){
+                result.value=Number(input.value)/3600;
+            }
+            else if (inputTypeValue==="Second" && resultTypeValue=="Day"){
+                result.value=Number(input.value)/86400;
+            }
+            else if (inputTypeValue==="Second" && resultTypeValue=="Week"){
+                result.value=Number(input.value)/604800;
+            }
+            else if (inputTypeValue==="Second" && resultTypeValue=="Month"){
+                result.value=Number(input.value)/2628000;
+            }
+            else if (inputTypeValue==="Second" && resultTypeValue=="Year"){
+                result.value=Number(input.value)/31540000;
+            }
+            else if (inputTypeValue==="Second" && resultTypeValue=="Decade"){
+                result.value=Number(input.value)/315400000;
+            }
+            else if (inputTypeValue==="Second" && resultTypeValue=="Century"){
+                result.value=Number(input.value)/3154000000;
+            }
+            //Minute to others
+            if (inputTypeValue==="Minute" && resultTypeValue=="Millisecond"){
+                result.value=Number(input.value)*60000;
+            }
+            else if (inputTypeValue==="Minute" && resultTypeValue=="Second"){
+                result.value=Number(input.value)*60;
+            }
+            else if (inputTypeValue==="Minute" && resultTypeValue=="Minute"){
+                result.value=Number(input.value);
+            }
+            else if (inputTypeValue==="Minute" && resultTypeValue=="Hour"){
+                result.value=Number(input.value)/60;
+            }
+            else if (inputTypeValue==="Minute" && resultTypeValue=="Day"){
+                result.value=Number(input.value)/1440;
+            }
+            else if (inputTypeValue==="Minute" && resultTypeValue=="Week"){
+                result.value=Number(input.value)/10080;
+            }
+            else if (inputTypeValue==="Minute" && resultTypeValue=="Month"){
+                result.value=Number(input.value)/43800;
+            }
+            else if (inputTypeValue==="Minute" && resultTypeValue=="Year"){
+                result.value=Number(input.value)/525600;
+            }
+            else if (inputTypeValue==="Minute" && resultTypeValue=="Decade"){
+                result.value=Number(input.value)/5256000;
+            }
+            else if (inputTypeValue==="Minute" && resultTypeValue=="Century"){
+                result.value=Number(input.value)/52560000;
+            }
+            //Hour to others
+            if (inputTypeValue==="Hour" && resultTypeValue=="Millisecond"){
+                result.value=Number(input.value)*3600000;
+            }
+            else if (inputTypeValue==="Hour" && resultTypeValue=="Second"){
+                result.value=Number(input.value)*3600;
+            }
+            else if (inputTypeValue==="Hour" && resultTypeValue=="Minute"){
+                result.value=Number(input.value)*60;
+            }
+            else if (inputTypeValue==="Hour" && resultTypeValue=="Hour"){
+                result.value=Number(input.value);
+            }
+            else if (inputTypeValue==="Hour" && resultTypeValue=="Day"){
+                result.value=Number(input.value)/24;
+            }
+            else if (inputTypeValue==="Hour" && resultTypeValue=="Week"){
+                result.value=Number(input.value)/168;
+            }
+            else if (inputTypeValue==="Hour" && resultTypeValue=="Month"){
+                result.value=Number(input.value)/730;
+            }
+            else if (inputTypeValue==="Hour" && resultTypeValue=="Year"){
+                result.value=Number(input.value)/8760;
+            }
+            else if (inputTypeValue==="Hour" && resultTypeValue=="Decade"){
+                result.value=Number(input.value)/87600;
+            }
+            else if (inputTypeValue==="Hour" && resultTypeValue=="Century"){
+                result.value=Number(input.value)/876000;
+            }
+            //Day to other
+            if (inputTypeValue==="Day" && resultTypeValue=="Millisecond"){
+                result.value=Number(input.value)*86400000;
+            }
+            else if (inputTypeValue==="Day" && resultTypeValue=="Second"){
+                result.value=Number(input.value)*86400;
+            }
+            else if (inputTypeValue==="Day" && resultTypeValue=="Minute"){
+                result.value=Number(input.value)*1440;
+            }
+            else if (inputTypeValue==="Day" && resultTypeValue=="Hour"){
+                result.value=Number(input.value)*24;
+            }
+            else if (inputTypeValue==="Day" && resultTypeValue=="Day"){
+                result.value=Number(input.value);
+            }
+            else if (inputTypeValue==="Day" && resultTypeValue=="Week"){
+                result.value=Number(input.value)/7;
+            }
+            else if (inputTypeValue==="Day" && resultTypeValue=="Month"){
+                result.value=Number(input.value)/30.417;
+            }
+            else if (inputTypeValue==="Day" && resultTypeValue=="Year"){
+                result.value=Number(input.value)/365;
+            }
+            else if (inputTypeValue==="Day" && resultTypeValue=="Decade"){
+                result.value=Number(input.value)/3650;
+            }
+            else if (inputTypeValue==="Day" && resultTypeValue=="Century"){
+                result.value=Number(input.value)/36500;
+            }
+            //Week to other
+            if (inputTypeValue==="Week" && resultTypeValue=="Millisecond"){
+                result.value=Number(input.value)*604800000;
+            }
+            else if (inputTypeValue==="Week" && resultTypeValue=="Second"){
+                result.value=Number(input.value)*604800;
+            }
+            else if (inputTypeValue==="Week" && resultTypeValue=="Minute"){
+                result.value=Number(input.value)*10080;
+            }
+            else if (inputTypeValue==="Week" && resultTypeValue=="Hour"){
+                result.value=Number(input.value)*168;
+            }
+            else if (inputTypeValue==="Week" && resultTypeValue=="Day"){
+                result.value=Number(input.value)*7;
+            }
+            else if (inputTypeValue==="Week" && resultTypeValue=="Week"){
+                result.value=Number(input.value);
+            }
+            else if (inputTypeValue==="Week" && resultTypeValue=="Month"){
+                result.value=Number(input.value)/4.345;
+            }
+            else if (inputTypeValue==="Week" && resultTypeValue=="Year"){
+                result.value=Number(input.value)/52.143;
+            }
+            else if (inputTypeValue==="Week" && resultTypeValue=="Decade"){
+                result.value=Number(input.value)/521;
+            }
+            else if (inputTypeValue==="Week" && resultTypeValue=="Century"){
+                result.value=Number(input.value)/5214;
+            }
+            //Month to other
+            if (inputTypeValue==="Month" && resultTypeValue=="Millisecond"){
+                result.value=Number(input.value)*2628000000;
+            }
+            else if (inputTypeValue==="Month" && resultTypeValue=="Second"){
+                result.value=Number(input.value)*2628000;
+            }
+            else if (inputTypeValue==="Month" && resultTypeValue=="Minute"){
+                result.value=Number(input.value)*43800;
+            }
+            else if (inputTypeValue==="Month" && resultTypeValue=="Hour"){
+                result.value=Number(input.value)*730;
+            }
+            else if (inputTypeValue==="Month" && resultTypeValue=="Day"){
+                result.value=Number(input.value)*30.417;
+            }
+            else if (inputTypeValue==="Month" && resultTypeValue=="Week"){
+                result.value=Number(input.value)*4.345;
+            }
+            else if (inputTypeValue==="Month" && resultTypeValue=="Month"){
+                result.value=Number(input.value);
+            }
+            else if (inputTypeValue==="Month" && resultTypeValue=="Year"){
+                result.value=Number(input.value)/12;
+            }
+            else if (inputTypeValue==="Month" && resultTypeValue=="Decade"){
+                result.value=Number(input.value)/120;
+            }
+            else if (inputTypeValue==="Month" && resultTypeValue=="Century"){
+                result.value=Number(input.value)/1200;
+            }
+            //Year to other
+            if (inputTypeValue==="Year" && resultTypeValue=="Millisecond"){
+                result.value=Number(input.value)*31540000000;
+            }
+            else if (inputTypeValue==="Year" && resultTypeValue=="Second"){
+                result.value=Number(input.value)*31540000;
+            }
+            else if (inputTypeValue==="Year" && resultTypeValue=="Minute"){
+                result.value=Number(input.value)*525600;
+            }
+            else if (inputTypeValue==="Year" && resultTypeValue=="Hour"){
+                result.value=Number(input.value)*8760;
+            }
+            else if (inputTypeValue==="Year" && resultTypeValue=="Day"){
+                result.value=Number(input.value)*365;
+            }
+            else if (inputTypeValue==="Year" && resultTypeValue=="Week"){
+                result.value=Number(input.value)*52.143;
+            }
+            else if (inputTypeValue==="Year" && resultTypeValue=="Month"){
+                result.value=Number(input.value)*12;
+            }
+            else if (inputTypeValue==="Year" && resultTypeValue=="Year"){
+                result.value=Number(input.value);
+            }
+            else if (inputTypeValue==="Year" && resultTypeValue=="Decade"){
+                result.value=Number(input.value)/10;
+            }
+            else if (inputTypeValue==="Year" && resultTypeValue=="Century"){
+                result.value=Number(input.value)/100;
+            }
+            //Decade to other
+            if (inputTypeValue==="Decade" && resultTypeValue=="Millisecond"){
+                result.value=Number(input.value)*315400000000;
+            }
+            else if (inputTypeValue==="Decade" && resultTypeValue=="Second"){
+                result.value=Number(input.value)*315400000;
+            }
+            else if (inputTypeValue==="Decade" && resultTypeValue=="Minute"){
+                result.value=Number(input.value)*5256000;
+            }
+            else if (inputTypeValue==="Decade" && resultTypeValue=="Hour"){
+                result.value=Number(input.value)*87600;
+            }
+            else if (inputTypeValue==="Decade" && resultTypeValue=="Day"){
+                result.value=Number(input.value)*3650;
+            }
+            else if (inputTypeValue==="Decade" && resultTypeValue=="Week"){
+                result.value=Number(input.value)*521;
+            }
+            else if (inputTypeValue==="Decade" && resultTypeValue=="Month"){
+                result.value=Number(input.value)*120;
+            }
+            else if (inputTypeValue==="Decade" && resultTypeValue=="Year"){
+                result.value=Number(input.value)*10;
+            }
+            else if (inputTypeValue==="Decade" && resultTypeValue=="Decade"){
+                result.value=Number(input.value);
+            }
+            else if (inputTypeValue==="Decade" && resultTypeValue=="Century"){
+                result.value=Number(input.value)/10;
+            }
+            //Century to other
+            if (inputTypeValue==="Century" && resultTypeValue=="Millisecond"){
+                result.value=Number(input.value)*3154000000000;
+            }
+            else if (inputTypeValue==="Century" && resultTypeValue=="Second"){
+                result.value=Number(input.value)*3154000000;
+            }
+            else if (inputTypeValue==="Century" && resultTypeValue=="Minute"){
+                result.value=Number(input.value)*52560000;
+            }
+            else if (inputTypeValue==="Century" && resultTypeValue=="Hour"){
+                result.value=Number(input.value)*876000;
+            }
+            else if (inputTypeValue==="Century" && resultTypeValue=="Day"){
+                result.value=Number(input.value)*36500;
+            }
+            else if (inputTypeValue==="Century" && resultTypeValue=="Week"){
+                result.value=Number(input.value)*5210;
+            }
+            else if (inputTypeValue==="Century" && resultTypeValue=="Month"){
+                result.value=Number(input.value)*1200;
+            }
+            else if (inputTypeValue==="Century" && resultTypeValue=="Year"){
+                result.value=Number(input.value)*100;
+            }
+            else if (inputTypeValue==="Century" && resultTypeValue=="Decade"){
+                result.value=Number(input.value)*10;
+            }
+            else if (inputTypeValue==="Century" && resultTypeValue=="Century"){
+                result.value=Number(input.value);
+            }
+        } </script>
+        </div>
+        <h1 class="u-custom-font u-font-raleway u-text u-text-body-alt-color u-text-default u-title u-text-1">Time Converter</h1>
+      </div>
+    </section>
+    
+    
+    
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+        <span>Website Templates</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="" target="_blank">
+        <span>Website Builder Software</span>
+      </a>. 
+    </section>
+  </body>
+</html>

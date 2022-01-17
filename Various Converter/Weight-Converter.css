@@ -1,0 +1,53 @@
+ .u-section-1 {
+  background-image: linear-gradient(white, #7abfe4);
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 699px;
+}
+
+.u-section-1 .u-icon-1 {
+  width: 40px;
+  height: 40px;
+  margin: 10px auto 0 -58px;
+}
+
+.u-section-1 .u-shape-1 {
+  width: 598px;
+  height: 316px;
+  margin: 142px auto 0;
+}
+
+.u-section-1 .u-custom-html-1 {
+  min-height: 158px;
+  width: 440px;
+  margin: -165px auto 0;
+}
+
+.u-section-1 .u-text-1 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin: -240px auto 60px;
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-shape-1 {
+    width: 540px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-shape-1 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    width: 340px;
+  }
+}#inputType{
+	margin-top: 15px;
+	margin-left: 76px;
+    margin-right: 13px;
+}
+.input.height.px.width.px {
+}

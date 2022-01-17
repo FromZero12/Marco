@@ -1,0 +1,288 @@
+ .u-section-1 {
+  background-image: linear-gradient(white, #7abfe4);
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 720px;
+}
+
+.u-section-1 .u-text-1 {
+  font-weight: 800;
+  font-size: 3.75rem;
+  margin: 60px auto 0;
+}
+
+.u-section-1 .u-text-2 {
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin: 14px auto 0;
+}
+
+.u-section-1 .u-text-3 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  text-align: start;
+  text-transform: uppercase;
+  margin: 74px auto 0 139px;
+}
+
+.u-section-1 .u-text-4 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  text-align: start;
+  text-transform: uppercase;
+  margin: -33px auto 0 340px;
+}
+
+.u-section-1 .u-text-5 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  text-align: start;
+  text-transform: uppercase;
+  margin: -33px auto 0 657px;
+}
+
+.u-section-1 .u-text-6 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  text-align: start;
+  text-transform: uppercase;
+  margin: -33px auto 0 880px;
+}
+
+.u-section-1 .u-btn-1 {
+  border-style: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition-duration: 0.5s;
+  box-shadow: 0 -2px 8px 0 rgba(128,128,128,1);
+  margin: 14px auto 0 351px;
+  padding: 20px 47px;
+}
+
+.u-section-1 .u-icon-1 {
+  font-size: 6.25em;
+  margin-left: 0;
+}
+
+.u-section-1 .u-btn-2 {
+  border-style: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 2px 0 0 0 rgba(0,0,0,0);
+  transition-duration: 0.5s;
+  margin: -200px auto 0 100px;
+  padding: 20px 47px;
+}
+
+.u-section-1 .u-icon-2 {
+  font-size: 6.25em;
+  margin-left: 0;
+}
+
+.u-section-1 .u-btn-3 {
+  border-style: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: -2px -2px 8px 0 rgba(128,128,128,1);
+  transition-duration: 0.5s;
+  margin: -199px auto 0 840px;
+  padding: 20px 47px;
+}
+
+.u-section-1 .u-icon-3 {
+  font-size: 6.25em;
+  margin-left: 0;
+}
+
+.u-section-1 .u-btn-4 {
+  border-style: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition-duration: 0.5s;
+  box-shadow: 0 -2px 8px 0 rgba(128,128,128,1);
+  margin: -198px auto 60px 596px;
+  padding: 18px 47px 20px;
+}
+
+.u-section-1 .u-icon-4 {
+  font-size: 6.25em;
+  margin-left: 0;
+  vertical-align: 0px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-text-4 {
+    margin-left: 283px;
+  }
+
+  .u-section-1 .u-text-5 {
+    margin-left: 542px;
+  }
+
+  .u-section-1 .u-text-6 {
+    margin-left: 725px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-left: 461px;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-left: 91px;
+  }
+
+  .u-section-1 .u-btn-3 {
+    margin-left: 649px;
+  }
+
+  .u-section-1 .u-btn-4 {
+    margin-left: 396px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-text-4 {
+    margin-left: 217px;
+  }
+
+  .u-section-1 .u-text-5 {
+    margin-left: 415px;
+  }
+
+  .u-section-1 .u-text-6 {
+    margin-left: 555px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-left: 351px;
+  }
+
+  .u-section-1 .u-btn-3 {
+    margin-left: 429px;
+  }
+
+  .u-section-1 .u-btn-4 {
+    margin-left: 176px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-text-4 {
+    margin-left: 163px;
+  }
+
+  .u-section-1 .u-text-5 {
+    margin-left: 311px;
+  }
+
+  .u-section-1 .u-text-6 {
+    margin-left: 416px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-left: 240px;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-left: 70px;
+  }
+
+  .u-section-1 .u-btn-3 {
+    margin-left: 228px;
+  }
+
+  .u-section-1 .u-btn-4 {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-text-1 {
+    font-size: 3rem;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-left: 88px;
+  }
+
+  .u-section-1 .u-text-4 {
+    margin-left: 101px;
+  }
+
+  .u-section-1 .u-text-5 {
+    margin-left: 196px;
+  }
+
+  .u-section-1 .u-text-6 {
+    margin-left: 262px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-left: 105px;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-left: 35px;
+  }
+
+  .u-section-1 .u-btn-3 {
+    margin-left: 35px;
+  }
+}
+
+.u-section-1 .u-btn-3,
+.u-section-1 .u-btn-3:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, background-size, background-position;
+}
+
+.u-section-1 .u-btn-3.u-btn-3.u-btn-3:hover {
+  box-shadow: 2px 2px 8px 0 rgba(128,128,128,1) !important;
+}
+
+.u-section-1 .u-btn-3.u-btn-3.u-btn-3.hover {
+  box-shadow: 2px 2px 8px 0 rgba(128,128,128,1) !important;
+}
+
+.u-section-1 .u-btn-1,
+.u-section-1 .u-btn-1:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, background-size, background-position;
+}
+
+.u-section-1 .u-btn-1.u-btn-1.u-btn-1:hover {
+  box-shadow: 2px 2px 8px 0 rgba(128,128,128,1) !important;
+}
+
+.u-section-1 .u-btn-1.u-btn-1.u-btn-1.hover {
+  box-shadow: 2px 2px 8px 0 rgba(128,128,128,1) !important;
+}
+
+.u-section-1 .u-btn-2,
+.u-section-1 .u-btn-2:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, background-size, background-position;
+}
+
+.u-section-1 .u-btn-2.u-btn-2.u-btn-2:hover {
+  box-shadow: 2px 2px 8px 0 rgba(128,128,128,1) !important;
+}
+
+.u-section-1 .u-btn-2.u-btn-2.u-btn-2.hover {
+  box-shadow: 2px 2px 8px 0 rgba(128,128,128,1) !important;
+}
+
+.u-section-1 .u-btn-4,
+.u-section-1 .u-btn-4:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, background-size, background-position;
+}
+
+.u-section-1 .u-btn-4.u-btn-4.u-btn-4:hover {
+  box-shadow: 2px 2px 8px 0 rgba(128,128,128,1) !important;
+}
+
+.u-section-1 .u-btn-4.u-btn-4.u-btn-4.hover {
+  box-shadow: 2px 2px 8px 0 rgba(128,128,128,1) !important;
+}
