@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator</title>
+		<link rel="stylesheet" href="background.css">
+	<style>
+        * {
+        margin: 0;
+        padding: 0;
+        }
+        div {
+        background-color: #1d1e1f;
+       } 
+	 body {
+	  background-color: #1d1e1f;
+	  font-family: arial;
+	  font-weight : 500;
+	  text-align: center;
+	  }
+	.row1 {
+	  margin-top: 40px;
+	  }
+	 h1 {
+	  color: white;
+	  margin-top: 50px;
+	 } 
+	.main{
+	display: flex;
+	width: 100%;
+	height: 90 vh;
+	flex-direction: column;
+	justify-content: center;
+	align-item: center;
+	} 
+	button{
+	background-color: #444444;
+	color: white;
+	width: 65px;
+	height: 65px;
+	margin: 2px 0.3px;
+	border: none;
+	outline: none;
+	border-radius: 15px;
+	font-size: 25px;
+	font-family: arial;
+	} 
+	input {
+	color: white;
+	} 
+	input[type="text"] {
+	background-color: #444444;
+	color: white;
+	height: 65px;
+	width: 272px;
+	border: none;
+	outline: none;
+	border-radius: 15px;
+	font-size: 25px;
+	font-family: arial;
+	} 
+	button:hover{
+	cursor: pointer;
+	background-color: rgb(160, 160,160);
+	color: white;
+	} 
+	.clear{
+	background-color: rgb(220,40,40);
+	color: white;
+	} 
+	.clear:hover{
+	background-color:rgb(37, 36, 54);
+	color: white;
+	} 
+	.rowB{
+	margin-right:70px;
+	}
+	
+	
+	</style>
+	</head>
+	<body>
+<div class="main">
+<h1>Calculator</h1>
+<div class="row1">
+  <input type="text" id="result" placeholder="result">
+  <button onclick="clearScreen()" class="clear">C</button>
+</div>
+
+<div class="row2">
+  <button onclick="updScreen(1)">1</button>
+  <button onclick="updScreen(2)">2</button>
+  <button onclick="updScreen(3)">3</button>
+  <button onclick="updScreen('+')">+</button>
+<button onclick="back()"><</button>
+</div>
+
+<div class="row3">
+  <button onclick="updScreen(4)">4</button>
+  <button onclick="updScreen(5)">5</button>
+  <button onclick="updScreen(6)">6</button>
+  <button onclick="updScreen('-')">-</button>
+ <button onclick="percent('%')" >%</button>
+</div>
+
+<div class="rowB">
+  <button onclick="updScreen(7)">7</button>
+  <button onclick="updScreen(8)">8</button>
+  <button onclick="updScreen(9)">9</button>
+  <button onclick="updScreen('*')">x</button>
+</div>
+
+<div class="rowB">
+  <button onclick="updScreen('.')">.</button>
+  <button onclick="updScreen(0)">0</button>
+  <button onclick="updScreen('/')">/</button>
+  <button onclick="result.value = eval(result.value)">=</button>
+ </div>
+ </div>
+ <script>
+  
+  function clearScreen() {
+ document.getElementById("result")
+  .value = " ";
+} 
+
+function back() {
+var x = document.getElementById(
+  "result"). value;
+document.getElementById("result").value = x.substring (0, x.length - 1);
+}
+
+function percent() {
+var x = document.getElementById(
+  "result"). value;
+document.getElementById("result").value = x * 1/100;
+
+
+} 
+function updScreen(val) {
+ var x = document.getElementById(
+  "result"). value;
+ document.getElementById("result").value = x + val;
+}
+</script>
+</body>
+</html>
