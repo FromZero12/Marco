@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f5238;
+    width: 100%;
+    height: 175px;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+}
+
+
+.home{
+    display: flex;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-left: 2px solid #d4a14a;
+    color: #d4a14a;
+    margin: 1%;
+    width: 340px;
+    height: 45px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.home:hover{
+    background-color: #ffe4c4;
+    color: #0f5238;
+}
+
+.feedback{
+    display: flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    border-right: 2px solid #d4a14a;
+    border-left: 2px solid #d4a14a;
+    color: #d4a14a;
+    margin: 1%;
+    width: 340px;
+    height: 45px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.feedback:hover{
+    background-color: #ffe4c4;
+    color: #0f5238;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-evenly;
+    background-color: #ffe4c4;
+}
+
+.upper{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2% ;
+    margin-bottom: 3%;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.des{
+    text-align: justify;
+    width: 470px;
+    color: #0f5238;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.border{
+    border-bottom: 2px solid black;
+    width: 470px;
+    margin: 3%;
+}
+
+.our-partner{
+    font-weight: bold;
+    color: #d4a14a;
+    margin-bottom: 3%;
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.partner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 400px;
+}
+
+.now{
+    font-weight: bold;
+    color:  #0f5238;
+    font-size: 3em;
+    text-align: center;
+    margin: 1%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.bot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 10px solid #0f5238;
+    padding: 2% 0;
+    margin-bottom: 3%;
+    width: 95%;
+    align-self: center;
+}
+
+.img1{
+    background-image: url(../assets/cinema.jpg);
+    background-size:550px;
+    width: 550px;
+    height: 300px;
+}
+
+.img1:hover{
+    background-image: url(../assets/bed.jpg);
+    background-size: 550px;
+    width: 550px;
+    height: 300px;
+    background-repeat: none;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f5238;
+}
+
+.sosmed{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 15%;
+    margin: 2%;
+}
+
+.copy{
+    font-weight: bold;
+    margin-left: 5%;
+    color: #d4a14a;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.2em;
+}

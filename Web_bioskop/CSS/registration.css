@@ -1,0 +1,49 @@
+body{
+    margin: 0px;
+    background-color: #ffe4c4;
+}
+
+textarea{
+    resize: none;
+    margin: 0.5%;
+}
+
+.header{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1%;
+    text-align: center;
+    color: #0f5238;
+}
+
+.form{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+input{
+    width: 15rem;
+    margin: 0.5%;
+}
+
+select{
+    width: 15rem;
+}
+
+#check{
+    width: 1rem;
+}
+
+#male,#female{
+    width: 1rem;
+}
+
+#submit{
+    width: 5rem;
+}
+
+label{
+    font-weight: bold;
+    color: #d4a14a;
+}
